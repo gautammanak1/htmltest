@@ -1,0 +1,320 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar .auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .auth-buttons a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .auth-buttons a.login {
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+
+.navbar .auth-buttons a.register {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: url('https://github.com/devcode8/event-images/blob/main/68.jpg?raw=true'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero .cta {
+    margin-top: 20px;
+}
+
+.hero .cta a {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content-section {
+    padding: 50px;
+}
+
+.content-section .header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Section: Photo Sharing */
+.section.header {
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+.header-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-content .text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.header-content img {
+    flex: 1;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Section: Stylish Photos */
+.stylish .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stylish .card {
+    text-align: center;
+}
+
+.stylish .card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Section: Free Trial Signup */
+.signup {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup-form input, 
+.signup-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.signup-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-content .footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-buttons button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom .social-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .cta a {
+        padding: 10px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
